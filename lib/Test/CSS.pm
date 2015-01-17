@@ -1,6 +1,6 @@
 package Test::CSS;
 
-$Test::CSS::VERSION = '0.01';
+$Test::CSS::VERSION = '0.02';
 
 =head1 NAME
 
@@ -8,7 +8,7 @@ Test::CSS - Interface to test CSS string and file.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
@@ -167,7 +167,7 @@ L<http://search.cpan.org/dist/Test-CSS/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (C) 2014 Mohammad S Anwar.
+Copyright (C) 2014 - 2015 Mohammad S Anwar.
 
 This  program  is  free software; you can redistribute it and/or modify it under
 the  terms  of the the Artistic License (2.0). You may obtain a copy of the full

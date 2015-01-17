@@ -1,7 +1,6 @@
 Changes
 Makefile.PL
 MANIFEST
-SIGNATURE
 MANIFEST.SKIP
 README
 lib/Test/CSS.pm
