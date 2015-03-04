@@ -15,17 +15,17 @@ WriteMakefile(
     PL_FILES           => {},
     MIN_PERL_VERSION   => 5.006,
     CONFIGURE_REQUIRES => {
-        'ExtUtils::MakeMaker' => 0,
+        'ExtUtils::MakeMaker'     => 0,
+        'File::ShareDir::Install' => 0,
     },
-    BUILD_REQUIRES => {
+    BUILD_REQUIRES     => {
         'Test::More'   => 0,
         'Test::Tester' => 0,
     },
     PREREQ_PM => {
-        'JSON'                    => 0,
-        'Test::Builder'           => 0,
-        'File::Share'             => 0,
-        'File::ShareDir::Install' => 0,
+        'JSON'          => 0,
+        'Test::Builder' => 0,
+        'File::Share'   => 0,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'Test-CSS-*' },

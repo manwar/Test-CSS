@@ -1,5 +1,8 @@
 Revision history for Perl extension Test::CSS.
 
+0.03  Wed Mar 04 17:00:00 2015
+      - Added File::ShareDir::Install as configure requires in the Makefile.PL file.
+
 0.02  Sat Jan 17 10:00:00 2015
       - Removed SIGNATURE file.
       - Updated MANIFEST.SKIP file to ignore folder 'eumm/'.

@@ -1,6 +1,6 @@
 package Test::CSS;
 
-$Test::CSS::VERSION = '0.02';
+$Test::CSS::VERSION = '0.03';
 
 =head1 NAME
 
@@ -8,7 +8,7 @@ Test::CSS - Interface to test CSS string and file.
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
@@ -20,7 +20,7 @@ use Test::Builder;
 
 require Exporter;
 our @ISA    = qw(Exporter);
-our @EXPORT = qw(is_valid_css_string is_valid_css_file);
+our @EXPORT = qw(ok_css_string ok_css_file);
 
 our $TESTER     = Test::Builder->new;
 our $PROPERTIES = JSON->new->utf8(1)->decode(_read_file(dist_file('Test-CSS', 'properties.json')));
@@ -33,11 +33,11 @@ CSS specifications.
 
 =head1 METHODS
 
-=head2 is_valid_css_string($css_string, $test_name)
+=head2 ok_css_string($css_string, $test_name)
 
 =cut
 
-sub is_valid_css_string($;$) {
+sub ok_css_string($;$) {
     my ($input, $test_name) = @_;
 
     eval { _parse_css($input) };
@@ -49,11 +49,11 @@ sub is_valid_css_string($;$) {
     }
 }
 
-=head2 is_valid_css_file($css_file, $test_name)
+=head2 ok_css_file($css_file, $test_name)
 
 =cut
 
-sub is_valid_css_file($;$) {
+sub ok_css_file($;$) {
     my ($file, $test_name) = @_;
 
     eval { _parse_css(_read_file($file)) };
