@@ -1,5 +1,8 @@
 Revision history for Perl extension Test::CSS.
 
+0.04  Sun Mar 08 23:00:00 2015
+      - Added LICENSE file.
+
 0.03  Wed Mar 04 17:00:00 2015
       - Added File::ShareDir::Install as configure requires in the Makefile.PL file.
 
