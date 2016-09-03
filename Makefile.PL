@@ -14,7 +14,6 @@ WriteMakefile(
     VERSION_FROM       => 'lib/Test/CSS.pm',
     ABSTRACT_FROM      => 'lib/Test/CSS.pm',
     LICENSE            => 'artistic_2',
-    PL_FILES           => {},
     MIN_PERL_VERSION   => 5.006,
     CONFIGURE_REQUIRES => {
         'ExtUtils::MakeMaker'     => 0,
@@ -36,8 +35,8 @@ WriteMakefile(
         resources => {
             repository => {
                 type => 'git',
-                url  => 'https://github.com/Manwar/Test-CSS.git',
-                web  => 'https://github.com/Manwar/Test-CSS',
+                url  => 'https://github.com/manwar/Test-CSS.git',
+                web  => 'https://github.com/manwar/Test-CSS',
             },
         }})
      : ()
