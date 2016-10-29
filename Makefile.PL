@@ -32,6 +32,9 @@ WriteMakefile(
     clean => { FILES => 'Test-CSS-*' },
     (eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (META_MERGE => {
         'meta-spec' => { version => 2 },
+        provides    => {
+            'Test::CSS' => { file => 'lib/Test/CSS.pm', version => '0.06' },
+        },
         resources => {
             repository => {
                 type => 'git',

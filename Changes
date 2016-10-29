@@ -1,5 +1,8 @@
 Revision history for Perl extension Test::CSS.
 
+0.06  Sat Oct 29 12:10:00 2016
+      - Added key 'provides' to the Makefile.PL script.
+
 0.05  Sat Sep 03 09:25:00 2016
       - Updated copyright year information.
       - Tidied up unit test script t/00-load.t.
