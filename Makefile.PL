@@ -41,7 +41,10 @@ WriteMakefile(
                 url  => 'https://github.com/manwar/Test-CSS.git',
                 web  => 'https://github.com/manwar/Test-CSS',
             },
-        }})
+	    bugtracker => {
+		web => 'https://github.com/manwar/Test-CSS/issues',
+	    },
+	}})
      : ()
     ),
 );
