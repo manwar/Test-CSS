@@ -1,6 +1,6 @@
 package Test::CSS;
 
-$Test::CSS::VERSION = '0.08';
+$Test::CSS::VERSION = '0.09';
 $Test::CSS::AUTHOR  = 'cpan:MANWAR';
 
 =head1 NAME
@@ -9,7 +9,7 @@ Test::CSS - Interface to test CSS string and file.
 
 =head1 VERSION
 
-Version 0.08
+Version 0.09
 
 =cut
 
