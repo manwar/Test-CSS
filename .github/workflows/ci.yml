@@ -32,13 +32,13 @@ jobs:
       run: |
         cpanm -v
 
+    - name: Install developer Dependencies
+      run: |
+        cpanm File::ShareDir::Install Test::CheckManifest Test::CPAN::Meta::JSON
+
     - name: Install Dependencies
       run: |
         cpanm --installdeps .
-
-    - name: Install Additional Dependencies
-      run: |
-        cpanm Test::CheckManifest Test::CPAN::Meta::JSON
 
     - name: Run tests
       run: |
