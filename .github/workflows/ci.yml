@@ -34,7 +34,7 @@ jobs:
 
     - name: Install developer Dependencies
       run: |
-        cpanm File::ShareDir::Install Test::CheckManifest Test::CPAN::Meta::JSON
+        cpanm File::ShareDir::Install Test::CheckManifest Test::CPAN::Meta::JSON Test::CPAN::Meta Test::Pod
 
     - name: Install Dependencies
       run: |
